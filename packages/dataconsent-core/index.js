@@ -1,5 +1,5 @@
-import ConsentManager from "./manager";
-import services from "./services";
+import ConsentManager from "./src/manager";
+import services from "./src/services";
 
 export {
   ConsentManager as default,
