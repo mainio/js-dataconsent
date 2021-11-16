@@ -3,7 +3,7 @@
 This package provides tooling for managing data consents e.g. for complying with
 GDPR / e-Privacy directive.
 
-This consists of the following pages:
+This consists of the following packages:
 
 - **@mainiotech/dataconsent-core** - The core tools to build the data consent
   banners and dialogs and to manage the user interaction with them.
