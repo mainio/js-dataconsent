@@ -1,0 +1,29 @@
+{
+  "name": "@mainiotech/dataconsent-bootstrap",
+  "version": "0.1.0",
+  "description": "Data consent manager for Bootstrap v5.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainio/js-dataconsent.git"
+  },
+  "keywords": [
+    "cookie",
+    "consent",
+    "data",
+    "consent",
+    "gdpr",
+    "e-privacy",
+    "eprivacy"
+  ],
+  "author": "Mainio Tech Oy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mainio/js-dataconsent/issues"
+  },
+  "homepage": "https://github.com/mainio/js-dataconsent#readme",
+  "dependencies": {
+    "@mainiotech/dataconsent-core": "^0.1.0",
+    "@mainiotech/dataconsent-i18n": "^0.1.0"
+  }
+}

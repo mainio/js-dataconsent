@@ -1,0 +1,25 @@
+{
+  "name": "@mainiotech/dataconsent-i18n",
+  "version": "0.1.0",
+  "description": "Translations for the data consent manager.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainio/js-dataconsent.git"
+  },
+  "keywords": [
+    "cookie",
+    "consent",
+    "data",
+    "consent",
+    "gdpr",
+    "e-privacy",
+    "eprivacy"
+  ],
+  "author": "Mainio Tech Oy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mainio/js-dataconsent/issues"
+  },
+  "homepage": "https://github.com/mainio/js-dataconsent#readme"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "mainio-dataconsent",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainio/js-dataconsent.git"
+  },
+  "author": "Mainio Tech Oy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mainio/js-dataconsent/issues"
+  },
+  "homepage": "https://github.com/mainio/js-dataconsent#readme",
+  "workspaces": [
+    "packages/*"
+  ]
+}

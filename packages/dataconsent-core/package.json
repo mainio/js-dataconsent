@@ -1,0 +1,28 @@
+{
+  "name": "@mainiotech/dataconsent-core",
+  "version": "0.1.0",
+  "description": "Base package to manage personal data consent on websites.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainio/js-dataconsent.git"
+  },
+  "keywords": [
+    "cookie",
+    "consent",
+    "data",
+    "consent",
+    "gdpr",
+    "e-privacy",
+    "eprivacy"
+  ],
+  "author": "Mainio Tech Oy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mainio/js-dataconsent/issues"
+  },
+  "homepage": "https://github.com/mainio/js-dataconsent#readme",
+  "dependencies": {
+    "cookie": "^0.4.1"
+  }
+}
