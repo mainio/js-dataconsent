@@ -1,6 +1,6 @@
 {
   "name": "@mainiotech/dataconsent-bootstrap",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Data consent manager for Bootstrap v5.",
   "main": "index.js",
   "repository": {
