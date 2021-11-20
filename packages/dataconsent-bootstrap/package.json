@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mainio/js-dataconsent#readme",
   "dependencies": {
-    "@mainiotech/dataconsent-core": "^0.2.0",
-    "@mainiotech/dataconsent-i18n": "^0.2.0"
+    "@mainiotech/dataconsent-core": "^0.3.0",
+    "@mainiotech/dataconsent-i18n": "^0.3.0"
   }
 }
