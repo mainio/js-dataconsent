@@ -144,11 +144,23 @@ class ConsentManager {
   }
 
   _initializeBanner() {
+    // Keep the banner element as the first element in the body so that keyboard
+    // users would access it the first thing on the page. Associate some
+    // classes, attributes and comments with the element to try to hide it from
+    // the search engines as instructed at:
+    // https://en.wikipedia.org/wiki/Noindex
+    // https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#data-nosnippet-attr
     this.bannerElement = document.createElement("div");
     this.bannerElement.id = "cookie-banner";
-    this.bannerElement.innerHTML = this.template.banner();
+    this.bannerElement.classList.add("robots-noindex", "robots-nocontent", "noindex");
+    this.bannerElement.setAttribute("data-nosnippet", "");
+    this.bannerElement.appendChild(document.createComment("noindex"));
+    this.bannerElement.appendChild(document.createComment("googleoff: all"));
+    this.bannerElement.insertAdjacentHTML("beforeend", this.template.banner());
+    this.bannerElement.appendChild(document.createComment("googleon: all"));
+    this.bannerElement.appendChild(document.createComment("/noindex"));
     this.hideBanner();
-    document.body.appendChild(this.bannerElement);
+    document.body.prepend(this.bannerElement);
 
     this.bannerElement.querySelectorAll("button").forEach((button) => {
       button.addEventListener("click", () => {
