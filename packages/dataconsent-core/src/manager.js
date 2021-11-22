@@ -11,6 +11,19 @@ class ConsentManager {
     this._initializeBanner();
     this._initializeModal();
 
+    this.waitingTrigger = false;
+    this.contentReady = false;
+    if (document.readyState === "complete"
+      || document.readyState === "loaded"
+      || document.readyState === "interactive"
+    ) {
+      this.contentReady = true;
+    } else {
+      document.addEventListener("DOMContentLoaded", () => {
+        this.contentReady = true;
+      });
+    }
+
     const cookies = parseCookies(document.cookie);
     if (cookies.dc) {
       try {
@@ -35,12 +48,6 @@ class ConsentManager {
     } else {
       this.showBanner();
     }
-
-    this.waitingTrigger = false;
-    this.contentReady = false;
-    document.addEventListener("DOMContentLoaded", () => {
-      this.contentReady = true;
-    });
   }
 
   triggerState() {
