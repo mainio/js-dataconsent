@@ -1,5 +1,5 @@
 import ConsentManager from "@mainiotech/dataconsent-core";
-import { Modal } from "bootstrap";
+import Modal from "bootstrap/js/src/modal";
 import tmpl from "./tmpl";
 
 class BootstrapConsentManager extends ConsentManager {
