@@ -83,7 +83,7 @@ const modal = (consentData) => {
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">${translations.settings.title}</h5>
+            <p class="h5 modal-title">${translations.settings.title}</p>
           </div>
           <div class="modal-body">
             <p class="mb-0">${translations.settings.body}</p>
