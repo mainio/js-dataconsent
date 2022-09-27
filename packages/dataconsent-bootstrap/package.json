@@ -1,6 +1,6 @@
 {
   "name": "@mainiotech/dataconsent-bootstrap",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Data consent manager for Bootstrap v5.",
   "main": "index.js",
   "repository": {
@@ -26,7 +26,7 @@
     "postversion": "version=$(sed -n -r 's/^  \"version\": \"([^\"]+)\",$/\\1/p' package.json) && sed -i -r 's/^(\\s+\"@mainiotech\\/dataconsent-[^\"]+\": \")[^\"]+(\",?)$/\\1^'$version'\\2/' package.json"
   },
   "dependencies": {
-    "@mainiotech/dataconsent-core": "^0.5.0",
-    "@mainiotech/dataconsent-i18n": "^0.5.0"
+    "@mainiotech/dataconsent-core": "^0.5.1",
+    "@mainiotech/dataconsent-i18n": "^0.5.1"
   }
 }

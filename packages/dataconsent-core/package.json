@@ -1,6 +1,6 @@
 {
   "name": "@mainiotech/dataconsent-core",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Base package to manage personal data consent on websites.",
   "main": "index.js",
   "repository": {
