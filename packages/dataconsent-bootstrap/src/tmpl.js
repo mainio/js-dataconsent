@@ -1,5 +1,11 @@
 import i18n from "@mainiotech/dataconsent-i18n";
 
+const encodeHTML = (text) => {
+  var el = document.createElement("div");
+  el.appendChild(document.createTextNode(text));
+  return el.innerHTML;
+}
+
 const banner = () => {
   const translations = i18n.getTranslations();
 
@@ -29,9 +35,9 @@ const modal = (consentData) => {
       return `
         <tr>
           <td>${translations.dataInfo.types[detail.type]}</td>
-          <td>${detail.name}</td>
-          <td>${detail.provider}</td>
-          <td>${detail.purpose}</td>
+          <td>${encodeHTML(detail.name)}</td>
+          <td>${encodeHTML(detail.provider)}</td>
+          <td>${encodeHTML(detail.purpose)}</td>
         </tr>
       `;
     });
