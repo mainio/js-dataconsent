@@ -13,5 +13,6 @@
   "homepage": "https://github.com/mainio/js-dataconsent#readme",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "version": "0.1.0"
 }
